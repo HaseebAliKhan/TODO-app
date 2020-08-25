@@ -1,7 +1,7 @@
 .cen{
     display: flex;
     justify-content: center;
-    margin: 10% 40%;
+    margin: 50px 38%;
     
 }
 .btn-primary , {
@@ -29,4 +29,28 @@
     
     
 }
-    
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url(cool-background.png);
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+   
+.heading{
+    text-align:center ;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+.btn-warning{
+    padding: 0px; !imported
+}
+   

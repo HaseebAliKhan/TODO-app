@@ -1,11 +1,14 @@
 var list = document.getElementById("list")
 
+
 function add_items() {
     var todo_items = document.getElementById("todo_items");
-    var li = document.createElement("li");
+    var li = document.createElement("ul");
     var LiText = document.createTextNode(todo_items.value);
     li.appendChild(LiText);
-    var delbtn = document.createElement('button');
+    var delbtn = document.createElement('button',);
+    delbtn.setAttribute("class","btn btn-danger");
+
     var delText = document.createTextNode("DELETE");
     delbtn.appendChild(delText);
     li.appendChild(delbtn);
@@ -16,6 +19,7 @@ function add_items() {
     EDIT.appendChild(EDITText);
     li.appendChild(EDIT);
     EDIT.setAttribute("onclick","EDITItems(this)")
+    EDIT.setAttribute("class","btn btn-warning")
     list.appendChild(li);
     todo_items.value=""
     
@@ -33,3 +37,4 @@ function EDITItems(f){
     var editValue = prompt("Enter Items",val)
     f.parentNode.firstChild.nodeValue= editValue
 }
+
